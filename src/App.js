@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function App(){
     return(
-        <div>teste</div>
+        <div>Inicio projeto</div>
     )
 }
