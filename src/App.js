@@ -1,10 +1,15 @@
 import React from 'react'
 import './global.css'
-
-import Routes from './routes'
+import Home from './pages/home'
+import NavBar from './pages/navbar'
+import Skills from './pages/skills'
 
 export default function App(){
     return(
-        <Routes />
+        <>
+        <NavBar />
+        <Home />
+        <Skills />
+        </>
     )
 }
