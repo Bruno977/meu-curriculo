@@ -1,9 +1,19 @@
 import React from 'react'
-import styles from './style.css'
-import { Link } from 'react-router-dom'
+
+import {NavigationBar} from './style'
 
 export default function NavBar(){
     return(
-        <div className="navbar">NavBar</div>
+        <NavigationBar>
+            <h4>Inicio</h4>
+            <nav>
+                <ul>
+                    <li>Habilidades</li>
+                    <li>Educação</li>
+                    <li>Experiência</li>
+                </ul>
+                <a href="Contacts">Contatos</a>
+            </nav>
+        </NavigationBar>
     )
 }
