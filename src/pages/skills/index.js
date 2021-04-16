@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function NavBar(){
+export default function Skills(){
     return(
-        <div>NavBar</div>
+        <div>Skills</div>
     )
 }
