@@ -8,10 +8,10 @@ export default function NavBar(){
             <nav>
                 <h4>Inicio</h4>
                 <ul>
-                    <li>Habilidades</li>
-                    <li>Educação</li>
-                    <li>Experiência</li>
-                    <li><a href="Contacts">Contatos</a></li>
+                    <li><a herf="skills">Habilidades</a></li>
+                    <li><a herf="education">Educação</a></li>
+                    <li><a herf="experience">Experiência</a></li>
+                    <li><button>Contatos</button></li>
                 </ul>
             </nav>
         </NavigationBar>

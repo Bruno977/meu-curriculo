@@ -23,16 +23,17 @@ export const NavigationBar = styled.nav`
         padding: 0px 30px;
     }
 
-    li a{
+    button{
 
         padding: 9px 25px;
         background-color:#d8e0e4;
         border-radius: 50px;
+        border: none;
         color: #333;
         transition: all 0.3s ease 0s;
     }
 
-    li a:hover, h4:hover{
+    h4:hover, button:hover{
         background-color: #333;
         color: #fff;
     }
