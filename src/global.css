@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #d8e0e4;
+}
 button{
     cursor: pointer;
 }
 a{
     color: inherit;
     text-decoration: none;
+}
+ul {
+    list-style: none;
 }
