@@ -8,9 +8,9 @@ export default function NavBar(){
             <nav>
                 <h4>Inicio</h4>
                 <ul>
-                    <li><a herf="skills">Habilidades</a></li>
-                    <li><a herf="education">Educação</a></li>
-                    <li><a herf="experience">Experiência</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#education">Educação</a></li>
+                    <li><a href="#experience">Experiência</a></li>
                     <li><button>Contatos</button></li>
                 </ul>
             </nav>
