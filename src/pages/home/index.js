@@ -1,7 +1,10 @@
 import React from 'react'
+import {Title} from './style'
 
 export default function Home(){
     return(
-        <div id="top">Home</div>
+        <Title>
+            <div id="top">Home</div>
+        </Title>
     )
 }
