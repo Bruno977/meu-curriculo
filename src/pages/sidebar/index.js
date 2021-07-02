@@ -1,21 +1,37 @@
 import { ProSidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
-import "react-pro-sidebar/dist/css/styles.css";
+import { Divide as Hamburger } from "hamburger-react";
 
 import { FaGem, FaHeart } from "react-icons/fa";
+
+import { useState } from "react";
+
 import { Container } from "./styles";
+import "./custom.scss";
 
 export default function SideBar() {
+  const [hamburguer, setHamburger] = useState(false);
+
+  const [isOpen, setOpen] = useState(true);
+
   return (
     <Container>
-      <ProSidebar>
+      <ProSidebar collapsed={hamburguer}>
         <Menu iconShape="square">
           <MenuItem icon={<FaGem />}>Dashboard</MenuItem>
-          <SubMenu title="Components" icon={<FaHeart />}>
-            <MenuItem>Component 1</MenuItem>
-            <MenuItem>Component 2</MenuItem>
-          </SubMenu>
         </Menu>
       </ProSidebar>
+
+      <Hamburger
+        toggled={isOpen}
+        toggle={setOpen}
+        onToggle={(toggled) => {
+          if (toggled) {
+            setHamburger(false);
+          } else {
+            setHamburger(true);
+          }
+        }}
+      />
     </Container>
   );
 }
