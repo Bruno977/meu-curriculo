@@ -9,7 +9,7 @@ import {
 
 export default function Home() {
   return (
-    <Container>
+    <Container id="home">
       <ProfileContainer>
         <div>
           <Card>
@@ -22,7 +22,7 @@ export default function Home() {
         <div>
           <InformationsHomePage>
             <h2>Olá!</h2>
-            <p>
+            <div>
               <Typical
                 loop={Infinity}
                 steps={[
@@ -33,7 +33,7 @@ export default function Home() {
                 ]}
                 wrapper="p"
               />
-            </p>
+            </div>
           </InformationsHomePage>
         </div>
       </ProfileContainer>

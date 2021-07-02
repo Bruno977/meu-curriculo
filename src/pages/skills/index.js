@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
 
-import {Title} from './style'
-export default function Skills(){
-    return(
-        <Title>
-            <div id="skills">Skills</div>
-
-        </Title>
-    )
+import { Title } from "./style";
+export default function Skills() {
+  return (
+    <Title id="education">
+      <div id="skills">Skills</div>
+    </Title>
+  );
 }

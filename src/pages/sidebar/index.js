@@ -1,7 +1,7 @@
-import { ProSidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Divide as Hamburger } from "hamburger-react";
 
-import { FaGem, FaHeart } from "react-icons/fa";
+import { FaGem } from "react-icons/fa";
 
 import { useState } from "react";
 
@@ -17,7 +17,12 @@ export default function SideBar() {
     <Container>
       <ProSidebar collapsed={hamburguer}>
         <Menu iconShape="square">
-          <MenuItem icon={<FaGem />}>Dashboard</MenuItem>
+          <MenuItem icon={<FaGem />}>
+            <a href="#home"> Inicio</a>
+          </MenuItem>
+          <MenuItem icon={<FaGem />}>
+            <a href="#education"> Educação</a>
+          </MenuItem>
         </Menu>
       </ProSidebar>
 

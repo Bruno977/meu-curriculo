@@ -48,7 +48,7 @@ export const InformationsHomePage = styled.div`
     padding: 25px 0;
   }
 
-  p {
+  div {
     margin-top: 3rem;
     font-size: 18px;
     width: 20rem;
