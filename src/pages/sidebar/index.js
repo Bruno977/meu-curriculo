@@ -1,7 +1,7 @@
-import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { ProSidebar, Menu, MenuItem, SidebarFooter } from "react-pro-sidebar";
 import { Divide as Hamburger } from "hamburger-react";
 
-import { FaGem } from "react-icons/fa";
+import { FaHome, FaIdCard, FaGraduationCap } from "react-icons/fa";
 
 import { useState } from "react";
 
@@ -15,16 +15,34 @@ export default function SideBar() {
 
   return (
     <Container>
-      <ProSidebar collapsed={hamburguer}>
-        <Menu iconShape="square">
-          <MenuItem icon={<FaGem />}>
-            <a href="#home"> Inicio</a>
-          </MenuItem>
-          <MenuItem icon={<FaGem />}>
-            <a href="#education"> Educação</a>
-          </MenuItem>
-        </Menu>
-      </ProSidebar>
+      <nav>
+        <ProSidebar collapsed={hamburguer}>
+          <Menu iconShape="square">
+            <MenuItem icon={<FaHome />}>
+              <a href="#home"> Inicio</a>
+            </MenuItem>
+            <MenuItem icon={<FaGraduationCap />}>
+              <a href="#education"> Educação</a>
+            </MenuItem>
+            <MenuItem icon={<FaHome />}>
+              <a href="#education"> Habilidades</a>
+            </MenuItem>
+            <MenuItem icon={<FaHome />}>
+              <a href="#education"> Experiência</a>
+            </MenuItem>
+          </Menu>
+
+          <SidebarFooter>
+            {
+              <Menu>
+                <MenuItem icon={<FaIdCard />}>
+                  <a href="#education"> Contatos</a>
+                </MenuItem>
+              </Menu>
+            }
+          </SidebarFooter>
+        </ProSidebar>
+      </nav>
 
       <Hamburger
         toggled={isOpen}

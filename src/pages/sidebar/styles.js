@@ -5,4 +5,8 @@ export const Container = styled.div`
   display: flex;
   position: sticky;
   top: 0;
+
+  nav {
+    height: 100%;
+  }
 `;
