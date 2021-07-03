@@ -4,6 +4,7 @@ export const Title = styled.div`
   h2 {
     letter-spacing: 2px;
     text-align: center;
+    font-size: 30px;
   }
   span {
     height: 10px;

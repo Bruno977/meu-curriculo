@@ -5,6 +5,7 @@ import SideBar from "./pages/sidebar";
 import Education from "./pages/education";
 import Skills from "./pages/skills";
 import Experience from "./pages/experience";
+import Hobbies from "./pages/hobbies";
 
 import { Container, AlignCenter } from "./styles";
 
@@ -27,6 +28,9 @@ export default function App() {
           </section>
           <section>
             <Experience />
+          </section>
+          <section>
+            <Hobbies />
           </section>
         </AlignCenter>
       </Container>

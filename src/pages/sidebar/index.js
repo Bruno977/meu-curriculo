@@ -7,6 +7,7 @@ import {
   FaUserGraduate,
   FaCode,
   FaBriefcase,
+  FaFish,
 } from "react-icons/fa";
 
 import { useState } from "react";
@@ -39,6 +40,9 @@ export default function SideBar() {
             </MenuItem>
             <MenuItem icon={<FaBriefcase />}>
               <a href="#experience"> Experiência</a>
+            </MenuItem>
+            <MenuItem icon={<FaFish />}>
+              <a href="#hobbies"> Hobbies</a>
             </MenuItem>
           </Menu>
 
