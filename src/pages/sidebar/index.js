@@ -38,7 +38,7 @@ export default function SideBar() {
               <a href="#skills"> Habilidades</a>
             </MenuItem>
             <MenuItem icon={<FaBriefcase />}>
-              <a href="#education"> Experiência</a>
+              <a href="#experience"> Experiência</a>
             </MenuItem>
           </Menu>
 

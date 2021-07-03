@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import SideBar from "./pages/sidebar";
 import Education from "./pages/education";
 import Skills from "./pages/skills";
+import Experience from "./pages/experience";
 
 import { Container, AlignCenter } from "./styles";
 
@@ -11,11 +12,22 @@ export default function App() {
   return (
     <>
       <Container>
-        <SideBar />
+        <nav>
+          <SideBar />
+        </nav>
         <AlignCenter>
-          <Home />
-          <Education />
-          <Skills />
+          <section>
+            <Home />
+          </section>
+          <section>
+            <Education />
+          </section>
+          <section>
+            <Skills />
+          </section>
+          <section>
+            <Experience />
+          </section>
         </AlignCenter>
       </Container>
     </>
