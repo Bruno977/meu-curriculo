@@ -1,7 +1,13 @@
 import { ProSidebar, Menu, MenuItem, SidebarFooter } from "react-pro-sidebar";
 import { Divide as Hamburger } from "hamburger-react";
 
-import { FaHome, FaIdCard, FaGraduationCap } from "react-icons/fa";
+import {
+  FaHome,
+  FaIdCard,
+  FaUserGraduate,
+  FaCode,
+  FaBriefcase,
+} from "react-icons/fa";
 
 import { useState } from "react";
 
@@ -25,13 +31,13 @@ export default function SideBar() {
             <MenuItem icon={<FaHome />}>
               <a href="#home"> Inicio</a>
             </MenuItem>
-            <MenuItem icon={<FaGraduationCap />} onClick={clickNavBar}>
+            <MenuItem icon={<FaUserGraduate />} onClick={clickNavBar}>
               <a href="#education"> Educação</a>
             </MenuItem>
-            <MenuItem icon={<FaHome />}>
-              <a href="#education"> Habilidades</a>
+            <MenuItem icon={<FaCode />}>
+              <a href="#skills"> Habilidades</a>
             </MenuItem>
-            <MenuItem icon={<FaHome />}>
+            <MenuItem icon={<FaBriefcase />}>
               <a href="#education"> Experiência</a>
             </MenuItem>
           </Menu>
