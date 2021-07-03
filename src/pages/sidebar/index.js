@@ -13,6 +13,10 @@ export default function SideBar() {
 
   const [isOpen, setOpen] = useState(true);
 
+  function clickNavBar(e) {
+    return e.target.offsetTop - 5;
+  }
+
   return (
     <Container>
       <nav>
@@ -21,7 +25,7 @@ export default function SideBar() {
             <MenuItem icon={<FaHome />}>
               <a href="#home"> Inicio</a>
             </MenuItem>
-            <MenuItem icon={<FaGraduationCap />}>
+            <MenuItem icon={<FaGraduationCap />} onClick={clickNavBar}>
               <a href="#education"> Educação</a>
             </MenuItem>
             <MenuItem icon={<FaHome />}>
