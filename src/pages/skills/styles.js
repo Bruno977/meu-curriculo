@@ -39,6 +39,11 @@ export const CardSkills = styled.div`
     margin-top: 1rem;
   }
 
+  strong {
+    display: flex;
+    align-items: center;
+  }
+
   .progressbar {
     width: 90%;
     background-color: #d8e0e4;

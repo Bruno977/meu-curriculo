@@ -24,8 +24,8 @@ export default function SKills() {
                 <li>
                   <strong>Html</strong>
 
-                  <div class="cointainer-progressbar">
-                    <div class="progressbar">
+                  <div className="cointainer-progressbar">
+                    <div className="progressbar">
                       <div style={{ width: "50%" }}></div>
                     </div>
                     <div>
@@ -37,8 +37,8 @@ export default function SKills() {
                 <li>
                   <strong>Css</strong>
 
-                  <div class="cointainer-progressbar">
-                    <div class="progressbar">
+                  <div className="cointainer-progressbar">
+                    <div className="progressbar">
                       <div style={{ width: "50%" }}></div>
                     </div>
                     <div>
@@ -48,10 +48,10 @@ export default function SKills() {
                 </li>
 
                 <li>
-                  <strong>Javascript</strong>
+                  <strong>Javascript </strong>
 
-                  <div class="cointainer-progressbar">
-                    <div class="progressbar">
+                  <div className="cointainer-progressbar">
+                    <div className="progressbar">
                       <div style={{ width: "50%" }}></div>
                     </div>
                     <div>70%</div>
@@ -60,8 +60,8 @@ export default function SKills() {
                 <li>
                   <strong>ReactJS</strong>
 
-                  <div class="cointainer-progressbar">
-                    <div class="progressbar">
+                  <div className="cointainer-progressbar">
+                    <div className="progressbar">
                       <div style={{ width: "50%" }}></div>
                     </div>
                     <div>
@@ -72,8 +72,8 @@ export default function SKills() {
                 <li>
                   <strong>NodeJS</strong>
 
-                  <div class="cointainer-progressbar">
-                    <div class="progressbar">
+                  <div className="cointainer-progressbar">
+                    <div className="progressbar">
                       <div style={{ width: "40%" }}></div>
                     </div>
                     <div>
@@ -84,8 +84,8 @@ export default function SKills() {
                 <li>
                   <strong>Git/Github</strong>
 
-                  <div class="cointainer-progressbar">
-                    <div class="progressbar">
+                  <div className="cointainer-progressbar">
+                    <div className="progressbar">
                       <div style={{ width: "60%" }}></div>
                     </div>
                     <div>
@@ -96,8 +96,8 @@ export default function SKills() {
                 <li>
                   <strong>Scrum</strong>
 
-                  <div class="cointainer-progressbar">
-                    <div class="progressbar">
+                  <div className="cointainer-progressbar">
+                    <div className="progressbar">
                       <div style={{ width: "40%" }}></div>
                     </div>
                     <div>
@@ -108,8 +108,8 @@ export default function SKills() {
                 <li>
                   <strong>Linux</strong>
 
-                  <div class="cointainer-progressbar">
-                    <div class="progressbar">
+                  <div className="cointainer-progressbar">
+                    <div className="progressbar">
                       <div style={{ width: "80%" }}></div>
                     </div>
                     <div>
