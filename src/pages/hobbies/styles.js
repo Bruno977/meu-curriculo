@@ -15,6 +15,22 @@ export const Title = styled.div`
 
 export const Container = styled.div`
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const HobbiesContainer = styled.div``;
+export const HobbiesContainer = styled.div`
+  display: flex;
+`;
+
+export const CardCarousel = styled.div``;
+
+export const CardDescription = styled.div`
+  background: #333;
+  height: 34rem;
+  width: 22rem;
+  margin-left: 1rem;
+
+  color: #fff;
+`;

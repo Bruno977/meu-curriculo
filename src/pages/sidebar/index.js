@@ -42,7 +42,7 @@ export default function SideBar() {
               <a href="#experience"> Experiência</a>
             </MenuItem>
             <MenuItem icon={<FaFish />}>
-              <a href="#hobbies"> Hobbies</a>
+              <a href="#hobbies"> Sobre mim</a>
             </MenuItem>
           </Menu>
 

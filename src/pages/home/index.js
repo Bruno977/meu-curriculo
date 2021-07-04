@@ -15,7 +15,9 @@ export default function Home() {
           <Card>
             <img src="https://github.com/bruno977.png" alt="" />
             <h2>Bruno Rodrigues</h2>
-            <p>Programador</p>
+            <p>
+              <i>Desenvolvedor</i>{" "}
+            </p>
           </Card>
         </div>
 

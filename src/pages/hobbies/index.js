@@ -1,6 +1,14 @@
 import React from "react";
 
-import { Container, HobbiesContainer, Title } from "./styles";
+import Carousel from "./Carousel";
+
+import {
+  Container,
+  HobbiesContainer,
+  Title,
+  CardCarousel,
+  CardDescription,
+} from "./styles";
 
 export default function Hobbies() {
   return (
@@ -8,11 +16,30 @@ export default function Hobbies() {
       <br id="hobbies" />
       <Title>
         <h2>
-          <span></span> Hobbies
+          <span></span> Sobre mim
         </h2>
       </Title>
       <Container>
-        <HobbiesContainer></HobbiesContainer>
+        <div>
+          <HobbiesContainer>
+            <div>
+              <CardCarousel>
+                <Carousel />
+              </CardCarousel>
+            </div>
+            <div>
+              <CardDescription>
+                <h2>Hobbies</h2>
+
+                <strong> Pescaria</strong>
+
+                <div>
+                  <i>asdjnacndcuoinsdnmioewhufdbsd</i>
+                </div>
+              </CardDescription>
+            </div>
+          </HobbiesContainer>
+        </div>
       </Container>
     </>
   );
