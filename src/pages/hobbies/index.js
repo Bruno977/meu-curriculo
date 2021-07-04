@@ -1,6 +1,7 @@
 import React from "react";
 
 import Carousel from "./Carousel";
+import { FaFish } from "react-icons/fa";
 
 import {
   Container,
@@ -29,12 +30,15 @@ export default function Hobbies() {
             </div>
             <div>
               <CardDescription>
-                <h2>Hobbies</h2>
+                <h2>
+                  Hobbies <FaFish />
+                </h2>
 
+                <br />
                 <strong> Pescaria</strong>
-
+                <br />
                 <div>
-                  <i>asdjnacndcuoinsdnmioewhufdbsd</i>
+                  <p>asdjnacndcuoinsdnmioewhufdbsd</p>
                 </div>
               </CardDescription>
             </div>

@@ -24,13 +24,32 @@ export const HobbiesContainer = styled.div`
   display: flex;
 `;
 
-export const CardCarousel = styled.div``;
+export const CardCarousel = styled.div`
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+`;
 
 export const CardDescription = styled.div`
-  background: #333;
   height: 34rem;
   width: 22rem;
-  margin-left: 1rem;
+  padding: 25px 30px;
 
+  background: #333;
+  margin-left: 1rem;
   color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  h2 {
+    display: flex;
+    letter-spacing: 2px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  p {
+    margin-top: 1rem;
+    letter-spacing: -1px;
+    text-align: justify;
+  }
 `;
