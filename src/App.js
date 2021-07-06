@@ -6,6 +6,7 @@ import Education from "./pages/education";
 import Skills from "./pages/skills";
 import Experience from "./pages/experience";
 import Hobbies from "./pages/hobbies";
+import Contacts from "./pages/contacts";
 
 import { Container, AlignCenter } from "./styles";
 
@@ -31,6 +32,9 @@ export default function App() {
           </section>
           <section>
             <Hobbies />
+          </section>
+          <section>
+            <Contacts />
           </section>
         </AlignCenter>
       </Container>

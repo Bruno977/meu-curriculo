@@ -8,7 +8,7 @@ import {
   CardWorkTwo,
 } from "./styles";
 
-import { FaLaptopCode, FaDesktop, FaGreaterThan } from "react-icons/fa";
+import { FaLaptopCode, FaDesktop } from "react-icons/fa";
 
 export default function Experience() {
   return (

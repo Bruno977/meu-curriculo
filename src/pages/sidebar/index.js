@@ -50,7 +50,7 @@ export default function SideBar() {
             {
               <Menu>
                 <MenuItem icon={<FaIdCard />}>
-                  <a href="#education"> Contatos</a>
+                  <a href="#contacts"> Contatos</a>
                 </MenuItem>
               </Menu>
             }

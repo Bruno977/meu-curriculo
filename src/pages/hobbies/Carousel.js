@@ -49,7 +49,7 @@ const styles = (theme) => ({
 
     alignItems: "center",
     height: "3rem",
-    paddingLeft: theme.spacing.unit * 4,
+    paddingLeft: theme.spacing(4),
     backgroundColor: theme.palette.background.default,
   },
   img: {

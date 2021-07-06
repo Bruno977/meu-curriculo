@@ -38,7 +38,18 @@ export default function Hobbies() {
                 <strong> Pescaria</strong>
                 <br />
                 <div>
-                  <p>asdjnacndcuoinsdnmioewhufdbsd</p>
+                  <p>
+                    Meu hobby preferido é a pescaria, uma verdadeira terapia
+                    cheia de emoções.
+                  </p>
+                  <p>
+                    <i>
+                      Muitos filosofos ao redor do mundo pregam a meditação como
+                      uma maneira de se conectar ao divino. Mas a minha
+                      meditação eu faço pescando -{" "}
+                      <strong>Nelson Nakamura</strong>
+                    </i>
+                  </p>
                 </div>
               </CardDescription>
             </div>
