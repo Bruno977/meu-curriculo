@@ -1,5 +1,4 @@
 import React from "react";
-import { useIntl } from "react-intl";
 import {
   ProSidebar,
   Menu,
@@ -10,17 +9,17 @@ import {
   SidebarContent,
 } from "react-pro-sidebar";
 import {
-  FaTachometerAlt,
-  FaGem,
-  FaList,
-  FaGithub,
-  FaRegLaughWink,
-  FaHeart,
+  FaHome,
+  FaIdCard,
+  FaUserGraduate,
+  FaCode,
+  FaBriefcase,
+  FaUserAlt,
   FaBars,
+  FaGem,
 } from "react-icons/fa";
 
 const Aside = ({ collapsed, toggled, handleToggleSidebar }) => {
-  const intl = useIntl();
   return (
     <div>
       <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
@@ -45,75 +44,35 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar }) => {
               whiteSpace: "nowrap",
             }}
           >
-            {intl.formatMessage({ id: "sidebarTitle" })}
+            Meu curriculo
           </div>
         </SidebarHeader>
-
         <SidebarContent>
           <Menu iconShape="circle">
-            <MenuItem
-              icon={<FaTachometerAlt />}
-              suffix={
-                <span className="badge red">
-                  {intl.formatMessage({ id: "new" })}
-                </span>
-              }
-            >
-              {intl.formatMessage({ id: "dashboard" })}
-            </MenuItem>
-            <MenuItem icon={<FaGem />}>
+            <MenuItem icon={<FaHome />}>
               {" "}
-              {intl.formatMessage({ id: "components" })}
+              <a href="#home"> Inicio</a>
             </MenuItem>
           </Menu>
           <Menu iconShape="circle">
-            <SubMenu
-              suffix={<span className="badge yellow">3</span>}
-              title={intl.formatMessage({ id: "withSuffix" })}
-              icon={<FaRegLaughWink />}
-            >
-              <MenuItem>{intl.formatMessage({ id: "submenu" })} 1</MenuItem>
-              <MenuItem>{intl.formatMessage({ id: "submenu" })} 2</MenuItem>
-              <MenuItem>{intl.formatMessage({ id: "submenu" })} 3</MenuItem>
-            </SubMenu>
-            <SubMenu
-              prefix={<span className="badge gray">3</span>}
-              title={intl.formatMessage({ id: "withPrefix" })}
-              icon={<FaHeart />}
-            >
-              <MenuItem>{intl.formatMessage({ id: "submenu" })} 1</MenuItem>
-              <MenuItem>{intl.formatMessage({ id: "submenu" })} 2</MenuItem>
-              <MenuItem>{intl.formatMessage({ id: "submenu" })} 3</MenuItem>
-            </SubMenu>
-            <SubMenu
-              title={intl.formatMessage({ id: "multiLevel" })}
-              icon={<FaList />}
-            >
-              <MenuItem>{intl.formatMessage({ id: "submenu" })} 1 </MenuItem>
-              <MenuItem>{intl.formatMessage({ id: "submenu" })} 2 </MenuItem>
-              <SubMenu title={`${intl.formatMessage({ id: "submenu" })} 3`}>
-                <MenuItem>
-                  {intl.formatMessage({ id: "submenu" })} 3.1{" "}
-                </MenuItem>
-                <MenuItem>
-                  {intl.formatMessage({ id: "submenu" })} 3.2{" "}
-                </MenuItem>
-                <SubMenu title={`${intl.formatMessage({ id: "submenu" })} 3.3`}>
-                  <MenuItem>
-                    {intl.formatMessage({ id: "submenu" })} 3.3.1{" "}
-                  </MenuItem>
-                  <MenuItem>
-                    {intl.formatMessage({ id: "submenu" })} 3.3.2{" "}
-                  </MenuItem>
-                  <MenuItem>
-                    {intl.formatMessage({ id: "submenu" })} 3.3.3{" "}
-                  </MenuItem>
-                </SubMenu>
-              </SubMenu>
-            </SubMenu>
+            <MenuItem icon={<FaUserGraduate />}>
+              {" "}
+              <a href="#education"> Educação</a>
+            </MenuItem>
+            <MenuItem icon={<FaCode />}>
+              {" "}
+              <a href="#skills"> Habilidades</a>
+            </MenuItem>
+            <MenuItem icon={<FaBriefcase />}>
+              {" "}
+              <a href="#skills"> Experiência</a>
+            </MenuItem>
+            <MenuItem icon={<FaUserAlt />}>
+              {" "}
+              <a href="#hobbies"> Sobre mim</a>
+            </MenuItem>
           </Menu>
         </SidebarContent>
-
         <SidebarFooter style={{ textAlign: "center" }}>
           <div
             className="sidebar-btn-wrapper"
@@ -121,14 +80,9 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar }) => {
               padding: "20px 24px",
             }}
           >
-            <a
-              href="https://github.com/azouaoui-med/react-pro-sidebar"
-              target="_blank"
-              className="sidebar-btn"
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-              <span> {intl.formatMessage({ id: "viewSource" })}</span>
+            <a href="#contacts" className="sidebar-btn">
+              <FaIdCard />
+              Contatos
             </a>
           </div>
         </SidebarFooter>
