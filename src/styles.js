@@ -4,4 +4,5 @@ export const Container = styled.div`
 `;
 export const AlignCenter = styled.div`
   flex: 1;
+  margin-left: 270px;
 `;

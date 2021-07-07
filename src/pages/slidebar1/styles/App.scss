@@ -21,6 +21,7 @@ body {
   display: flex;
   position: relative;
 
+
   .btn-toggle {
     
     cursor: pointer;
@@ -63,6 +64,10 @@ body {
       }
     }
   }
+  .sidebar-btn i {
+    margin-left: 5px;
+  }
+
 
 
   @media (max-width: 767.98px) {
@@ -80,10 +85,18 @@ body {
       margin-top: 1rem;
       margin-left: 1rem;
     }
+
   }
+
 }
 
+.sidebar{
+  position: fixed;
+}
+
+
 .badge {
+
   padding: 3px 6px;
   font-size: 9px;
   letter-spacing: 1px;

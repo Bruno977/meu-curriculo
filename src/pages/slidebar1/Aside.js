@@ -3,7 +3,6 @@ import {
   ProSidebar,
   Menu,
   MenuItem,
-  SubMenu,
   SidebarHeader,
   SidebarFooter,
   SidebarContent,
@@ -16,7 +15,6 @@ import {
   FaBriefcase,
   FaUserAlt,
   FaBars,
-  FaGem,
 } from "react-icons/fa";
 
 const Aside = ({ collapsed, toggled, handleToggleSidebar }) => {
@@ -26,6 +24,7 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar }) => {
         <FaBars />
       </div>
       <ProSidebar
+        className="sidebar"
         collapsed={collapsed}
         breakPoint="md"
         toggled={toggled}
@@ -82,7 +81,7 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar }) => {
           >
             <a href="#contacts" className="sidebar-btn">
               <FaIdCard />
-              Contatos
+              <i>Contatos</i>
             </a>
           </div>
         </SidebarFooter>
