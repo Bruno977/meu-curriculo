@@ -22,6 +22,12 @@ export const Container = styled.div`
 
 export const ExperienceContainer = styled.div`
   display: flex;
+
+  @media (max-width: 900px) {
+    div {
+      margin-top: 1rem;
+    }
+  }
 `;
 
 export const CardWorkOne = styled.div`
@@ -50,6 +56,10 @@ export const CardWorkOne = styled.div`
     margin-top: 1rem;
     letter-spacing: -1px;
     text-align: justify;
+  }
+
+  @media (max-width: 900px) {
+    width: 22rem;
   }
 `;
 
@@ -81,5 +91,10 @@ export const CardWorkTwo = styled.div`
     margin-top: 1rem;
     letter-spacing: -1px;
     text-align: justify;
+  }
+  @media (max-width: 900px) {
+    margin-bottom: 1rem;
+    margin-left: 0;
+    width: 22rem;
   }
 `;

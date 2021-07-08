@@ -74,7 +74,7 @@ export const CardSkills = styled.div`
   }
   @media (max-width: 900px) {
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     width: 22rem;
 
     h2 {
