@@ -62,6 +62,9 @@ export const CardCourses = styled.div`
   @media (max-width: 1200px) {
     height: 32rem;
   }
+  @media (max-width: 900px) {
+    width: 22rem;
+  }
 `;
 
 export const CardCollege = styled.div`
@@ -98,6 +101,7 @@ export const CardCollege = styled.div`
   @media (max-width: 900px) {
     margin-left: 0;
     margin-right: 0;
+    width: 22rem;
   }
 `;
 
@@ -131,5 +135,6 @@ export const CardLanguage = styled.div`
   }
   @media (max-width: 900px) {
     margin-bottom: 1rem;
+    width: 22rem;
   }
 `;

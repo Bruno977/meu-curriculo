@@ -18,7 +18,8 @@ export default function SKills() {
           <CardSkills>
             <div>
               <h2>
-                Linguagens de programação & Ferramentas <FaCode />
+                Linguagens de programação & Ferramentas.{" "}
+                <FaCode className="icon-code" />
               </h2>
               <ul>
                 <li>

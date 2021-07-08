@@ -68,4 +68,20 @@ export const CardSkills = styled.div`
     align-items: center;
     justify-content: space-between;
   }
+
+  @media (max-width: 1200px) {
+    height: 32rem;
+  }
+  @media (max-width: 900px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 22rem;
+
+    h2 {
+      justify-content: center;
+    }
+    .cointainer-progressbar {
+      flex-direction: row;
+    }
+  }
 `;
