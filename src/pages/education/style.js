@@ -22,6 +22,11 @@ export const Container = styled.div`
 
 export const EducationContainer = styled.div`
   display: flex;
+
+  /* @media (max-width: 900px) {
+    flex-direction: column;
+    height: 100%;
+  } */
 `;
 
 export const CardCourses = styled.div`
@@ -48,6 +53,10 @@ export const CardCourses = styled.div`
   }
   li > strong {
     letter-spacing: -1px;
+  }
+
+  @media (max-width: 1200px) {
+    height: 32rem;
   }
 `;
 
@@ -79,6 +88,9 @@ export const CardCollege = styled.div`
   li > strong {
     letter-spacing: -1px;
   }
+  @media (max-width: 1200px) {
+    height: 32rem;
+  }
 `;
 
 export const CardLanguage = styled.div`
@@ -105,5 +117,8 @@ export const CardLanguage = styled.div`
   }
   li > strong {
     letter-spacing: -1px;
+  }
+  @media (max-width: 1200px) {
+    height: 32rem;
   }
 `;

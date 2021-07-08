@@ -26,7 +26,7 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar }) => {
       <ProSidebar
         className="sidebar"
         collapsed={collapsed}
-        breakPoint="md"
+        breakPoint="xl"
         toggled={toggled}
         onToggle={handleToggleSidebar}
       >

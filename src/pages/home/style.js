@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +13,7 @@ export const ProfileContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  padding: 25px 30px;
+  padding: 2rem 2rem;
   background: #fff;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
@@ -35,6 +36,10 @@ export const Card = styled.div`
     height: 18rem;
     width: 18rem;
   }
+
+  @media (max-width: 900px) {
+    margin-top: 4rem;
+  }
 `;
 
 export const InformationsHomePage = styled.div`
@@ -42,7 +47,8 @@ export const InformationsHomePage = styled.div`
 
   h2 {
     background: #333;
-    width: 134px;
+    width: 8rem;
+    max-width: 8rem;
     color: #fff;
     text-align: center;
     padding: 25px 0;
@@ -52,5 +58,9 @@ export const InformationsHomePage = styled.div`
     margin-top: 3rem;
     font-size: 18px;
     width: 20rem;
+    height: 1rem;
+  }
+  @media (max-width: 900px) {
+    margin-left: 0;
   }
 `;

@@ -22,18 +22,28 @@ export default function App() {
             <section>
               <Home />
             </section>
+          </div>
+          <div>
             <section>
               <Education />
             </section>
+          </div>
+          <div>
             <section>
               <Skills />
             </section>
+          </div>
+          <div>
             <section>
               <Experience />
             </section>
+          </div>
+          <div>
             <section>
               <Hobbies />
             </section>
+          </div>
+          <div>
             <section>
               <Contacts />
             </section>
