@@ -27,6 +27,11 @@ export const EducationContainer = styled.div`
     flex-direction: column;
     height: 100%;
   } */
+  div {
+    @media (max-width: 900px) {
+      margin-top: 1rem;
+    }
+  }
 `;
 
 export const CardCourses = styled.div`
@@ -49,7 +54,6 @@ export const CardCourses = styled.div`
 
   li {
     margin-top: 1rem;
-    text-align: justify;
   }
   li > strong {
     letter-spacing: -1px;
@@ -91,6 +95,10 @@ export const CardCollege = styled.div`
   @media (max-width: 1200px) {
     height: 32rem;
   }
+  @media (max-width: 900px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 `;
 
 export const CardLanguage = styled.div`
@@ -120,5 +128,8 @@ export const CardLanguage = styled.div`
   }
   @media (max-width: 1200px) {
     height: 32rem;
+  }
+  @media (max-width: 900px) {
+    margin-bottom: 1rem;
   }
 `;
