@@ -132,7 +132,9 @@ export default function Contacts() {
                   </div>
                   <div>
                     <FaEnvelope size={30} color="#333" />
-                    <strong>brunorodrigues.silveira@gmail.com</strong>
+                    <strong className="email">
+                      brunorodrigues.silveira@gmail.com
+                    </strong>
                   </div>
                   <div>
                     <FaSearchLocation size={30} color="#333" />
@@ -144,24 +146,26 @@ export default function Contacts() {
           </CardContacts>
           <CardSocialNetwork>
             <div>
-              <a href="https://www.facebook.com/profile.php?id=100001660880731">
-                <FaFacebookSquare size={30} />
-              </a>
-            </div>
-            <div>
-              <a href="https://www.instagram.com/bruunoo.rodrigues/">
-                <FaInstagram size={30} />
-              </a>
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/bruno-rodrigues-78416319b/">
-                <FaLinkedin size={30} />
-              </a>
-            </div>
-            <div>
-              <a href="https://github.com/Bruno977">
-                <FaGithub size={30} />
-              </a>
+              <div>
+                <a href="https://www.facebook.com/profile.php?id=100001660880731">
+                  <FaFacebookSquare size={30} />
+                </a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/bruunoo.rodrigues/">
+                  <FaInstagram size={30} />
+                </a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/bruno-rodrigues-78416319b/">
+                  <FaLinkedin size={30} />
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com/Bruno977">
+                  <FaGithub size={30} />
+                </a>
+              </div>
             </div>
           </CardSocialNetwork>
         </div>

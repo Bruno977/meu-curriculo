@@ -115,7 +115,7 @@ export default function Education() {
                   <ul>
                     <li>
                       {" "}
-                      <FaCheck /> <strong>Inglês intermediario</strong>
+                      <FaCheck /> <strong>Inglês intermediário</strong>
                       <div>
                         <i>20/06/2019 - Random</i>
                       </div>

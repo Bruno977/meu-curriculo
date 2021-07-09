@@ -33,7 +33,7 @@ export default function Home() {
                   "Tenho 24 anos, moro em Itaperuna, Rio de Janeiro.",
                   3000,
                 ]}
-                wrapper="p"
+                wrapper="div"
               />
             </div>
           </InformationsHomePage>

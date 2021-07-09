@@ -22,11 +22,6 @@ export const Container = styled.div`
 
 export const EducationContainer = styled.div`
   display: flex;
-
-  /* @media (max-width: 900px) {
-    flex-direction: column;
-    height: 100%;
-  } */
   div {
     @media (max-width: 900px) {
       margin-top: 1rem;

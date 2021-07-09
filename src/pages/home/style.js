@@ -58,7 +58,7 @@ export const InformationsHomePage = styled.div`
     margin-top: 3rem;
     font-size: 18px;
     width: 20rem;
-    height: 1rem;
+    height: 3rem !important;
   }
   @media (max-width: 900px) {
     margin-left: 0;

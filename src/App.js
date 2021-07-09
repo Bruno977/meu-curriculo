@@ -18,36 +18,29 @@ export default function App() {
           <SideBar />
         </nav>
         <AlignCenter>
-          <div>
-            <section>
-              <Home />
-            </section>
-          </div>
-          <div>
-            <section>
-              <Education />
-            </section>
-          </div>
-          <div>
-            <section>
-              <Skills />
-            </section>
-          </div>
-          <div>
-            <section>
-              <Experience />
-            </section>
-          </div>
-          <div>
-            <section>
-              <Hobbies />
-            </section>
-          </div>
-          <div>
-            <section>
-              <Contacts />
-            </section>
-          </div>
+          <section>
+            <Home />
+          </section>
+
+          <section>
+            <Education />
+          </section>
+
+          <section>
+            <Skills />
+          </section>
+
+          <section>
+            <Experience />
+          </section>
+
+          <section>
+            <Hobbies />
+          </section>
+
+          <footer>
+            <Contacts />
+          </footer>
         </AlignCenter>
       </Container>
     </>

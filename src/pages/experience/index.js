@@ -30,7 +30,7 @@ export default function Experience() {
                 <div className="occupation">
                   <strong>Auxiliar de TI</strong>
                   <br />
-                  <i>Inicio - Outubro de 2018</i>
+                  <i>Início - Outubro de 2018</i>
                 </div>
 
                 <div className="description">

@@ -83,5 +83,8 @@ export const CardSkills = styled.div`
     .cointainer-progressbar {
       flex-direction: row;
     }
+    .progressbar {
+      margin-right: 5px;
+    }
   }
 `;

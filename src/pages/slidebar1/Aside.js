@@ -65,7 +65,7 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar }) => {
             </MenuItem>
             <MenuItem icon={<FaBriefcase />}>
               {" "}
-              <a href="#skills"> Experiência</a>
+              <a href="#experience"> Experiência</a>
             </MenuItem>
             <MenuItem icon={<FaUserAlt />}>
               {" "}

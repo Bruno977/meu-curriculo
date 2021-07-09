@@ -113,29 +113,40 @@ export const CardFindMe = styled.div`
     strong {
       width: 200px;
     }
+    div > div {
+      flex-direction: row;
+    }
+    .email {
+      letter-spacing: -1px;
+      font-size: 13.5px;
+    }
   }
 `;
 
 export const CardSocialNetwork = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
   width: 57rem;
-  height: 4rem;
-  padding: 25px 30px;
-
+  padding: 13px;
   margin-top: 1rem;
   background-color: #333;
   div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div > div {
     margin-left: 1rem;
     color: #fff;
   }
 
   @media (max-width: 900px) {
     width: 22rem;
+    margin-bottom: 1rem;
+
+    div {
+      flex-direction: row !important;
+    }
   }
 `;

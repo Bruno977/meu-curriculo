@@ -64,8 +64,8 @@ export const CardDescription = styled.div`
     text-align: justify;
   }
   @media (max-width: 900px) {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+
     margin-left: 0;
   }
 `;
