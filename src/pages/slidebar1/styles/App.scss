@@ -37,9 +37,7 @@ body {
     font-size: 15px;
     display: none;
 
-    @media (max-width: 900px) {
-     
-    }
+    
   }
 
   .sidebar-btn-wrapper {
@@ -91,6 +89,12 @@ body {
     }
 
   }
+
+  @media (max-width: 900px) {
+    .btn-toggle {
+      z-index: 1;
+    }
+   }
 
 }
 

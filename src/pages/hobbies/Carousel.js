@@ -11,7 +11,7 @@ export default function FishingCarousel() {
   return (
     <Carousel autoPlay infiniteLoop dynamicHeight={500}>
       <div>
-        <img src={Pintado} alt="Pintado" />
+        <img src={Pintado} alt="Pintado" className="teste" />
       </div>
       <div>
         <img src={Pirarucu} alt="Pirarucu" />
