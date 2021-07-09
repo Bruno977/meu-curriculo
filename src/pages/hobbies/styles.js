@@ -25,21 +25,23 @@ export const Container = styled.div`
 
 export const HobbiesContainer = styled.div`
   display: flex;
+  height: 35rem;
+  margin-bottom: 1rem;
 `;
 
 export const CardCarousel = styled.div`
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 20rem;
+  height: 100%;
 
   @media (max-width: 900px) {
     width: 22rem;
-    padding: 22px;
-    background: #fff;
   }
 `;
 
 export const CardDescription = styled.div`
-  height: 34rem;
+  height: 100%;
   width: 22rem;
   padding: 25px 30px;
 
