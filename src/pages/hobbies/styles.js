@@ -25,14 +25,14 @@ export const Container = styled.div`
 
 export const HobbiesContainer = styled.div`
   display: flex;
-  height: 35rem;
-  margin-bottom: 1rem;
+  height: 38rem;
+  margin-bottom: 2rem;
 `;
 
 export const CardCarousel = styled.div`
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  width: 20rem;
+  width: 22rem;
   height: 100%;
 
   @media (max-width: 900px) {

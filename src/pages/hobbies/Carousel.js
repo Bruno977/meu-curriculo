@@ -9,7 +9,7 @@ import Eu from "../../assets/eu.jpeg";
 
 export default function FishingCarousel() {
   return (
-    <Carousel autoPlay infiniteLoop dynamicHeight={500}>
+    <Carousel autoPlay infiniteLoop>
       <div>
         <img src={Pintado} alt="Pintado" className="teste" />
       </div>

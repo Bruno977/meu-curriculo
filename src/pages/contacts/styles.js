@@ -60,6 +60,10 @@ export const CardEmail = styled.div`
   @media (max-width: 900px) {
     margin-top: 2rem;
     width: 22rem;
+
+    #outlined-basic {
+      margin-left: 10px;
+    }
   }
 `;
 
@@ -111,7 +115,7 @@ export const CardFindMe = styled.div`
     margin-left: 0;
 
     strong {
-      width: 200px;
+      width: 230px;
     }
     div > div {
       flex-direction: row;
