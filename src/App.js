@@ -1,7 +1,7 @@
 import React from "react";
 import "./global.css";
 import Home from "./pages/home";
-import SideBar from "./pages/slidebar1/Layout";
+import SideBar from "./pages/sidebar/Layout";
 import Education from "./pages/education";
 import Skills from "./pages/skills";
 import Experience from "./pages/experience";
