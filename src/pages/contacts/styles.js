@@ -56,6 +56,11 @@ export const CardEmail = styled.div`
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
+
+  @media (max-width: 900px) {
+    margin-top: 2rem;
+    width: 22rem;
+  }
 `;
 
 export const CardFindMe = styled.div`
@@ -99,6 +104,16 @@ export const CardFindMe = styled.div`
     left: -20px;
     position: absolute;
   }
+
+  @media (max-width: 900px) {
+    width: 22rem;
+    margin-top: 2rem;
+    margin-left: 0;
+
+    strong {
+      width: 200px;
+    }
+  }
 `;
 
 export const CardSocialNetwork = styled.div`
@@ -118,5 +133,9 @@ export const CardSocialNetwork = styled.div`
   div {
     margin-left: 1rem;
     color: #fff;
+  }
+
+  @media (max-width: 900px) {
+    width: 22rem;
   }
 `;

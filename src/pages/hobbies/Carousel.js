@@ -45,13 +45,19 @@ const styles = (theme) => ({
   },
   header: {
     display: "flex",
-    background: "#333",
 
     alignItems: "center",
     height: "3rem",
     paddingLeft: theme.spacing(4),
     backgroundColor: theme.palette.background.default,
+    "@media (max-width:900px)": {
+      height: "31rem",
+    },
   },
+  div: {
+    height: "10rem",
+  },
+
   img: {
     height: "28rem",
     display: "block",

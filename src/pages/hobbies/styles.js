@@ -11,6 +11,9 @@ export const Title = styled.div`
     border-left: 8px solid #333;
     margin-right: 1rem;
   }
+  @media (max-width: 900px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 export const Container = styled.div`
@@ -27,6 +30,12 @@ export const HobbiesContainer = styled.div`
 export const CardCarousel = styled.div`
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  @media (max-width: 900px) {
+    width: 22rem;
+    padding: 22px;
+    background: #fff;
+  }
 `;
 
 export const CardDescription = styled.div`
@@ -51,5 +60,10 @@ export const CardDescription = styled.div`
     margin-top: 1rem;
     letter-spacing: -1px;
     text-align: justify;
+  }
+  @media (max-width: 900px) {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
   }
 `;
