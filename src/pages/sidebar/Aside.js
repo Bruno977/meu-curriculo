@@ -44,7 +44,7 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar }) => {
               whiteSpace: "nowrap",
             }}
           >
-            Meu curriculo
+            Meu currículo
           </div>
         </SidebarHeader>
         <SidebarContent>

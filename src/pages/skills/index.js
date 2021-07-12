@@ -27,7 +27,7 @@ export default function SKills() {
 
                   <div className="cointainer-progressbar">
                     <div className="progressbar">
-                      <div style={{ width: "50%" }}></div>
+                      <div style={{ width: "60%" }}></div>
                     </div>
                     <div>
                       <i>60%</i>{" "}
@@ -43,7 +43,7 @@ export default function SKills() {
                       <div style={{ width: "50%" }}></div>
                     </div>
                     <div>
-                      <i>60%</i>{" "}
+                      <i>50%</i>{" "}
                     </div>
                   </div>
                 </li>
@@ -53,9 +53,9 @@ export default function SKills() {
 
                   <div className="cointainer-progressbar">
                     <div className="progressbar">
-                      <div style={{ width: "50%" }}></div>
+                      <div style={{ width: "60%" }}></div>
                     </div>
-                    <div>70%</div>
+                    <div>60%</div>
                   </div>
                 </li>
                 <li>
