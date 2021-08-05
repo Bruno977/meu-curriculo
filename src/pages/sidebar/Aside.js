@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   ProSidebar,
@@ -51,7 +51,10 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar }) => {
           <Menu iconShape="circle">
             <MenuItem icon={<FaHome />}>
               {" "}
-              <a href="#home"> Inicio</a>
+              <a href="#home" id="teste">
+                {" "}
+                Inicio
+              </a>
             </MenuItem>
           </Menu>
           <Menu iconShape="circle">

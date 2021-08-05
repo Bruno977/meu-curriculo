@@ -28,7 +28,7 @@ export default function Experience() {
               </h2>
               <div>
                 <div className="occupation">
-                  <strong>Auxiliar de TI</strong>
+                  <strong>Analista de suporte computacional</strong>
                   <br />
                   <i>Início - Outubro de 2018</i>
                 </div>
@@ -36,7 +36,7 @@ export default function Experience() {
                 <div className="description">
                   <strong>Descrição</strong>
                   <p>
-                    Auxiliar de TI, trabalhando na montagem e manutenção de
+                    Analista de suporte, trabalhando na montagem e manutenção de
                     computadores, NOC (Centro de operações de rede), instalação
                     de alarmes e câmeras.
                   </p>

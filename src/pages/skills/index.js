@@ -111,10 +111,10 @@ export default function SKills() {
 
                   <div className="cointainer-progressbar">
                     <div className="progressbar">
-                      <div style={{ width: "80%" }}></div>
+                      <div style={{ width: "60%" }}></div>
                     </div>
                     <div>
-                      <i>80%</i>{" "}
+                      <i>60%</i>{" "}
                     </div>
                   </div>
                 </li>
