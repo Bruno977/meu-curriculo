@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import About from './pages/about';
 import Home from './pages/home';
@@ -8,9 +8,6 @@ import { AnimatePresence } from 'framer-motion';
 function Router() {
   const location = useLocation();
 
-  useEffect(() => {
-    console.log(location);
-  }, [location]);
   return (
     <AnimatePresence>
       <Routes location={location} key={location.key}>

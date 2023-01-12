@@ -24,4 +24,14 @@ export const ContentImage = styled.div`
     z-index: -1;
     transform: translate3d(26px, 26px, -26px);
   }
+  @media screen and (max-width: 768px) {
+    /* padding: 0 1.25rem; */
+    /* max-width: 100%; */
+    img {
+      max-width: 100%;
+    }
+    &:before {
+      display: none;
+    }
+  }
 `;
