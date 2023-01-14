@@ -9,13 +9,26 @@ import {
   ContainerExperienceEducation,
   GridProgress,
 } from './styles';
-import { Button } from '../../components/Button';
+import { Button, ButtonLink } from '../../components/Button';
 import TimeLine from '../../components/TimeLine';
 import TitleSection from '../../components/TitleSection';
 import ProgressBar from '../../components/ProgressBar';
 import { DownloadSimple } from 'phosphor-react';
 
 function About() {
+  function downloadCV() {
+    fetch('curriculo.pdf').then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'curriculo.pdf';
+        alink.click();
+      });
+    });
+  }
   return (
     <motion.main
       transition={{ duration: 0.5, ease: 'easeInOut' }}
@@ -100,7 +113,7 @@ function About() {
               </li>
             </ul>
             <div className="button-container">
-              <Button type="button">
+              <Button type="button" variant="solid" onClick={downloadCV}>
                 <DownloadSimple size={24} />
                 <span>Download Cv</span>
               </Button>
