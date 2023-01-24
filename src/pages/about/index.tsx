@@ -9,7 +9,7 @@ import {
   ContainerExperienceEducation,
   GridProgress,
 } from './styles';
-import { Button, ButtonLink } from '../../components/Button';
+import { Button } from '../../components/Button';
 import TimeLine from '../../components/TimeLine';
 import TitleSection from '../../components/TitleSection';
 import ProgressBar from '../../components/ProgressBar';
