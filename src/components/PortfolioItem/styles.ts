@@ -14,8 +14,11 @@ export const Project = styled.li`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     scale: 0.9;
     transition: ${(props) => props.theme.transitions.all};
+
+    position: relative;
   }
   p {
     transition: ${(props) => props.theme.transitions.all};
@@ -25,8 +28,18 @@ export const Project = styled.li`
     font-weight: bold;
     text-align: center;
   }
+  svg {
+    position: absolute;
+    bottom: 0;
+    font-size: 0;
+    transition: ${(props) => props.theme.transitions.all};
+  }
   &:hover a {
     scale: 1.1;
+  }
+  &:hover svg {
+    font-size: 32px;
+    bottom: 1.25rem;
   }
 
   @media screen and (max-width: 768px) {
