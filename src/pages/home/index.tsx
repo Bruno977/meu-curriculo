@@ -1,5 +1,5 @@
-import { User, Suitcase } from 'phosphor-react';
 import React from 'react';
+import { User, Suitcase } from 'phosphor-react';
 import Avatar from '../../components/Avatar';
 import { ButtonLink } from '../../components/Button';
 import { Title } from '../../styles/global';
@@ -21,7 +21,7 @@ function Home() {
         animate={{ height: '0' }}
         transition={{ duration: 0.8 }}
       />
-      <section className="container">
+      <section className="container" style={{ margin: '2.5rem 0' }}>
         <GridColumns>
           <Avatar />
           <AboutMe>

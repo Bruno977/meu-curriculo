@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
   position: fixed;
   top: 1.25rem;
   left: 1.25rem;
+  z-index: 999;
 `;
 
 export const Toogle = styled.div<MenuProps>`
@@ -68,6 +69,7 @@ export const Menu = styled.ul<MenuProps>`
     color: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
     transition: ${(props) => props.theme.transitions.all};
+    font-weight: bold;
 
     &:before {
       content: '';
@@ -95,12 +97,15 @@ export const Menu = styled.ul<MenuProps>`
     }
     span {
       display: block;
-
-      transition: transform 0.2s;
+      font-size: 0.875rem;
+      transition: ${(props) => props.theme.transitions.all};
       opacity: ${(props) => (props.isActive ? 1 : 0)};
       transform: ${(props) =>
         props.isActive ? 'translateX(0)' : 'translateX(-25px)'};
       ${(props) => (props.isActive ? 'animation: slideIn 0.15s backwards' : '')}
+    }
+    &:hover span {
+      color: ${(props) => props.theme.colors.green300};
     }
   }
 
