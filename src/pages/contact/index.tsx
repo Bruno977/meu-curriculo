@@ -8,8 +8,10 @@ import {
   GithubLogo,
   InstagramLogo,
   LinkedinLogo,
+  PaperPlaneTilt,
   WhatsappLogo,
 } from 'phosphor-react';
+import { Button } from '../../components/Button';
 
 function Contact() {
   return (
@@ -87,7 +89,20 @@ function Contact() {
               </li>
             </ul>
           </Aside>
-          <Content>content</Content>
+          <Content>
+            <label htmlFor="name">Seu Nome</label>
+            <input type="text" placeholder="Nome" id="name" name="name" />
+            <label htmlFor="message">Mensagem</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Mensagem"
+            ></textarea>
+            <Button>
+              <PaperPlaneTilt size={20} />
+              <span>Enviar</span>
+            </Button>
+          </Content>
         </Columns>
       </section>
     </motion.section>

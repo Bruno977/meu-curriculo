@@ -39,10 +39,42 @@ export const Aside = styled.aside`
   }
 `;
 
-export const Content = styled.div``;
+export const Content = styled.form`
+  label {
+    display: block;
+    margin-bottom: 0.625rem;
+  }
+  label:not(:first-of-type) {
+    margin-top: 1.25rem;
+  }
+  input,
+  textarea {
+    width: 50%;
+  }
+  textarea {
+    min-height: 100px;
+  }
+  button {
+    display: block;
+    margin-top: 1.25rem;
+  }
+  @media screen and (max-width: 768px) {
+    input,
+    textarea {
+      width: 100%;
+    }
+    button {
+      margin-bottom: 2.5rem;
+    }
+  }
+`;
 
 export const Columns = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 1.25rem;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;

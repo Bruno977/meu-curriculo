@@ -36,7 +36,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: ${(props) => props.theme.fontSizes.text2xl};
         color: ${(props) => props.theme.colors.white};
   }
-  input {
+  input{
         flex: 1;
         height: 2.75rem;
         padding: 1.25rem;
@@ -46,7 +46,22 @@ export const GlobalStyle = createGlobalStyle`
         color: ${(props) => props.theme.colors.white};
 
         transition: ${(props) => props.theme.transitions.all};
-    }
+  }
+  textarea {
+    padding: 1.25rem;
+    background-color: ${(props) => props.theme.colors.gray800};
+    border: 2px solid ${(props) => props.theme.colors.gray800};
+    border-radius: ${(props) => props.theme.borderRadius.roundedMd};
+    color: ${(props) => props.theme.colors.white};
+    resize: vertical;
+  }
+  input:focus,
+  textarea:focus,
+  input:hover,
+  textarea:hover{
+    border-color: ${(props) => props.theme.colors.green500};
+  }
+   
 
     .privacy-screen {
       position: fixed;
