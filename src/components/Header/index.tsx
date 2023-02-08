@@ -1,6 +1,6 @@
-import { Briefcase, House, User } from 'phosphor-react';
+import { Briefcase, Chats, House, User } from 'phosphor-react';
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { HeaderContainer, Menu, Toogle, MenuBackground } from './styles';
 
 import { useLocation } from 'react-router-dom';
@@ -23,7 +23,6 @@ function Header() {
         }
       }
     }
-    // window.addEventListener('click', handleClick);
     window.addEventListener('click', handleClick);
 
     return () => {
@@ -32,7 +31,7 @@ function Header() {
   }, [isOpen]);
 
   return (
-    <HeaderContainer className="menu">
+    <HeaderContainer isActive={isOpen} className="menu">
       <Toogle
         isActive={isOpen}
         onClick={() => setIsOpen(!isOpen)}
@@ -48,16 +47,22 @@ function Header() {
           </NavLink>
         </li>
         <li>
-          <Link to="about">
+          <NavLink to="about">
             <span>Sobre</span>
             <User size={24} />
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="portfolio">
+          <NavLink to="portfolio">
             <span>Portfólio</span>
             <Briefcase size={24} />
-          </Link>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="contact">
+            <span>Contato</span>
+            <Chats size={24} />
+          </NavLink>
         </li>
       </Menu>
       <MenuBackground isActive={isOpen} className="menu" />

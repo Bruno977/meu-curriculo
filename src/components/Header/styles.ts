@@ -3,17 +3,19 @@ interface MenuProps {
   isActive: boolean;
 }
 
-export const HeaderContainer = styled.header`
+export const HeaderContainer = styled.header<MenuProps>`
   position: fixed;
   top: 1.25rem;
   left: 1.25rem;
   z-index: 999;
+  pointer-events: ${(props) => (props.isActive ? 'all' : 'none')};
 `;
 
 export const Toogle = styled.div<MenuProps>`
   background-color: ${(props) => props.theme.colors.gray600};
   border-radius: ${(props) => props.theme.borderRadius.roundedFull};
 
+  pointer-events: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,6 +37,7 @@ export const Toogle = styled.div<MenuProps>`
     height: 2px;
     background-color: ${(props) => props.theme.colors.white};
     transition: ${(props) => props.theme.transitions.all};
+    pointer-events: none;
   }
   span:before {
     content: '';
