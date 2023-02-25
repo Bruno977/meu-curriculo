@@ -39,7 +39,7 @@ export const Aside = styled.aside`
   }
 `;
 
-export const Content = styled.form`
+export const Form = styled.form`
   label {
     display: block;
     margin-bottom: 0.625rem;

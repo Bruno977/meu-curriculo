@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import Title from '../../components/Title';
-import { Aside, Content, Columns } from './styles';
+import { Aside, Form, Columns } from './styles';
 import {
   Envelope,
   FacebookLogo,
@@ -14,6 +15,26 @@ import {
 import { Button } from '../../components/Button';
 
 function Contact() {
+  const form = useRef<null | HTMLFormElement>(null);
+
+  const SERVICE_ID: string | undefined = process.env.REACT_APP_SERVICE_ID;
+  const TEMPLATE_ID: string | undefined = process.env.REACT_APP_TEMPLATE_ID;
+  const PUBLIC_KEY: string | undefined = process.env.REACT_APP_PUBLIC_KEY;
+
+  function sendEmail(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (form.current && SERVICE_ID && TEMPLATE_ID && PUBLIC_KEY) {
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    }
+  }
+
   return (
     <motion.section
       transition={{ duration: 0.5, ease: 'easeInOut' }}
@@ -89,20 +110,32 @@ function Contact() {
               </li>
             </ul>
           </Aside>
-          <Content>
-            <label htmlFor="name">Seu Nome</label>
-            <input type="text" placeholder="Nome" id="name" name="name" />
+          <Form ref={form} onSubmit={sendEmail}>
+            <label htmlFor="user_name">Seu Nome</label>
+            <input
+              type="text"
+              placeholder="Nome"
+              id="user_name"
+              name="user_name"
+            />
+            <label htmlFor="user_email">Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              id="user_email"
+              name="user_email"
+            />
             <label htmlFor="message">Mensagem</label>
             <textarea
               name="message"
               id="message"
               placeholder="Mensagem"
             ></textarea>
-            <Button>
+            <Button type="submit">
               <PaperPlaneTilt size={20} />
               <span>Enviar</span>
             </Button>
-          </Content>
+          </Form>
         </Columns>
       </section>
     </motion.section>
