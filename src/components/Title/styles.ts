@@ -37,5 +37,6 @@ export const DefaultTitle = styled.h1`
     p:after {
       display: none;
     }
+    margin-top: 6rem;
   }
 `;

@@ -21,7 +21,7 @@ function Home() {
         animate={{ height: '0' }}
         transition={{ duration: 0.8 }}
       />
-      <section className="container" style={{ margin: '2.5rem 0' }}>
+      <section className="container">
         <GridColumns>
           <Avatar />
           <AboutMe>

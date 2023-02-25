@@ -3,12 +3,14 @@ import styled from 'styled-components';
 export const GridColumns = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 6rem;
   min-height: 100vh;
 
-  /* color: ${(props) => props.theme.colors.white}; */
+  @media screen and (max-width: 768px) {
+    margin: 2.5rem 0;
+  }
 `;
 
 export const AboutMe = styled.div`
