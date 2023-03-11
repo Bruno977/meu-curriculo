@@ -12,7 +12,7 @@ function Router() {
   return (
     <AnimatePresence>
       <Routes location={location} key={location.key}>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/meu-curriculo" element={<Home />}></Route>
         <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>

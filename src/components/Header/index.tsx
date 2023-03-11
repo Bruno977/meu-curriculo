@@ -41,7 +41,7 @@ function Header() {
       </Toogle>
       <Menu isActive={isOpen} className="menu">
         <li>
-          <NavLink to="/">
+          <NavLink to="/meu-curriculo">
             <span>Inicio</span>
             <House size={24} />
           </NavLink>
