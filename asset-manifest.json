@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/meu-curriculo/static/js/main.c0bed3e2.js",
+    "main.js": "/meu-curriculo/static/js/main.0d908533.js",
     "static/media/profile2c.png": "/meu-curriculo/static/media/profile2c.071e8faf32f4d0c4595e.png",
     "index.html": "/meu-curriculo/index.html",
-    "main.c0bed3e2.js.map": "/meu-curriculo/static/js/main.c0bed3e2.js.map"
+    "main.0d908533.js.map": "/meu-curriculo/static/js/main.0d908533.js.map"
   },
   "entrypoints": [
-    "static/js/main.c0bed3e2.js"
+    "static/js/main.0d908533.js"
   ]
 }
