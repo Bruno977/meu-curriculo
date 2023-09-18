@@ -26,7 +26,7 @@ export function ModalProject({
   async function getProject() {
     setLoading(true);
     try {
-      const response = await fetch(`/api/${projectId}`);
+      const response = await fetch(`/projects/${projectId}`);
       const responseJson = await response.json();
       setProject(responseJson);
     } catch (error) {
