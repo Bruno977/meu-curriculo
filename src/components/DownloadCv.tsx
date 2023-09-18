@@ -5,15 +5,17 @@ import { InboxArrowDownIcon } from '@heroicons/react/20/solid';
 
 export function DownloadCv() {
   function downloadCV() {
-    fetch('curriculo.pdf').then((response) => {
-      response.blob().then((blob) => {
-        const fileURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement('a');
-        alink.href = fileURL;
-        alink.download = 'curriculo.pdf';
-        alink.click();
-      });
-    });
+    fetch(`${process.env.NEXT_PUBLIC_PATH_IMAGE}/curriculo.pdf`).then(
+      (response) => {
+        response.blob().then((blob) => {
+          const fileURL = window.URL.createObjectURL(blob);
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'curriculo.pdf';
+          alink.click();
+        });
+      }
+    );
   }
   return (
     <Button.root onClick={downloadCV}>
