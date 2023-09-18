@@ -1,7 +1,6 @@
 {
   "name": "curriculo-3.0",
   "version": "0.1.0",
-  "Homepage": "https://bruno977.github.io/meu-curriculo",
   "private": true,
   "scripts": {
     "dev": "next dev",

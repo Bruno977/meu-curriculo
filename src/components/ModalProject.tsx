@@ -93,13 +93,15 @@ export function ModalProject({
                           <XMarkIcon className="h-6 w-6 text-white" />
                         </button>
                       </div>
-                      <div onClick={() => setToggler(!toggler)}>
-                        <Image
-                          src={project.thumb}
-                          alt={project.name}
-                          className="rounded-lg max-w-full"
-                        />
-                      </div>
+                      {project.thumb && (
+                        <div onClick={() => setToggler(!toggler)}>
+                          <Image
+                            src={project.thumb}
+                            alt={project.name}
+                            className="rounded-lg max-w-full"
+                          />
+                        </div>
+                      )}
                       {project.description && (
                         <div
                           className="pt-8"
