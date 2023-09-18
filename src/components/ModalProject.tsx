@@ -5,7 +5,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { ProjectType } from '@/types/projectType';
 import FsLightbox from 'fslightbox-react';
 import { XMarkIcon } from '@heroicons/react/20/solid';
-import { LoadingComponent } from './Loading';
+import { ProjectsReact } from '@/data/projects';
 
 interface ModalProjectProps {
   isOpen: boolean;
@@ -21,18 +21,14 @@ export function ModalProject({
   const [project, setProject] = useState<ProjectType | null>(null);
 
   const [toggler, setToggler] = useState(false);
-  const [loading, setLoading] = useState(false);
 
   async function getProject() {
-    setLoading(true);
-    try {
-      const response = await fetch(`/projects/${projectId}`);
-      const responseJson = await response.json();
-      setProject(responseJson);
-    } catch (error) {
-      console.log(error);
+    const response = ProjectsReact.find(
+      (project) => project.id === Number(projectId)
+    );
+    if (response) {
+      setProject(response);
     }
-    setLoading(false);
   }
 
   function handleCloseModal() {
@@ -44,8 +40,6 @@ export function ModalProject({
       getProject();
     }
   }, [projectId]);
-
-  if (loading) return <LoadingComponent />;
 
   return (
     <>
