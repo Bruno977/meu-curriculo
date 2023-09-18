@@ -1,5 +1,6 @@
 import { imagesCheckPay } from './checkpay';
 import { imagesIcakbar } from './icakbar';
+import { imagesVdablio } from './vdablio';
 import { imagesZnt } from './znt/images';
 export const ProjectsReact = [
   {
@@ -126,7 +127,9 @@ export const ProjectsReact = [
         <h4>Visão Geral do Projeto:</h4>
         <p>O projeto consistiu no desenvolvimento de uma plataforma educacional online dedicada a proporcionar uma experiência de aprendizado envolvente e altamente eficaz para os alunos. Esta plataforma foi projetada para abrigar uma ampla variedade de cursos em diversos tópicos, oferecendo uma abordagem flexível e inovadora para o ensino e aprendizado.</p>
         <h4>Tecnologias Utilizadas:</h4>
-        <p>Para a construção deste sistema, foi utilizado um conjunto de tecnologias modernas que incluem Next.js, TypeScript, Tailwind CSS, Headless UI, Vimeo para conteúdo de vídeo, Formik e Yup para gerenciamento de formulários, bem como o Swiper para aprimorar a experiência de navegação dos usuários.
+        <p>Para a construção deste sistema, foi utilizado um conjunto de tecnologias modernas que 
+        incluem Next.js, TypeScript, Tailwind CSS, Headless UI, Vimeo para conteúdo de vídeo, Formik e Yup para 
+        gerenciamento de formulários, bem como o Swiper para aprimorar a experiência de navegação dos usuários.
         </p>
         <h4>Desafios Enfrentados:</h4>
         <p>Um dos principais desafios encontrados durante o desenvolvimento do sistema foi o gerenciamento eficiente das aulas. Era necessário criar uma maneira intuitiva para os alunos acompanharem o progresso das aulas, possibilitando pausar e retomar o conteúdo, enquanto garantiamos que o progresso fosse registrado de forma precisa.
@@ -155,8 +158,16 @@ export const ProjectsReact = [
         name: 'Typescript',
       },
       {
-        id: 3,
-        name: 'radix-ui',
+        id: 6,
+        name: 'Tailwind-CSS',
+      },
+      {
+        id: 7,
+        name: 'Headless-ui',
+      },
+      {
+        id: 8,
+        name: 'vimeo',
       },
       {
         id: 4,
@@ -165,6 +176,62 @@ export const ProjectsReact = [
       {
         id: 5,
         name: 'yup',
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: 'Vdablio',
+    thumb: imagesVdablio.thumb,
+    images: imagesVdablio.images,
+    description: `
+      <div class="description-project">
+
+        <h2>Sistema de Vendas de Ingressos para o VDABLIO Racing.</h2>
+
+        <h4>Visão Geral do Projeto:</h4>
+        <p>VDABLIO Racing é uma plataforma desenvolvida para gerenciar e promover o evento VDABLIO Racing, que é um evento de grande escala dedicado ao antigomobilismo e ao desafio de arrancada de veículos.</p>
+
+        <h4>Tecnologias Utilizadas:</h4>
+        <p>A plataforma foi construída utilizando tecnologias modernas, incluindo Next.js, TypeScript, Formik, Yup e Swiper. </p>
+
+        <h4>Desafios Enfrentados:</h4>
+        <p>Dois dos principais desafios enfrentados durante o desenvolvimento do sistema foram o gerenciamento do carrinho de compras e a implementação de filtros de ranking dos carros.</p>
+        
+        <h4>Soluções Implementadas:</h4>
+        <p>Para resolver o desafio do gerenciamento do carrinho de compras, foi implementado um contexto. Essa abordagem simplificou o processo de atualização e exclusão de itens no carrinho, proporcionando uma experiência de compra fluida para os usuários.</p>
+        <p>Para abordar o desafio dos filtros de classificação, aproveitamos o recurso server-side rendering do Next.js. Isso significa que, sempre que um usuário seleciona um filtro, a URL é atualizada para refletir a escolha do usuário e, em seguida, realizamos uma busca com base nas opções selecionadas.</p>
+
+        <h4>Recursos e Funcionalidades Principais:</h4>
+        <p>Os participantes podem registrar seus veículos no sistema, incluindo detalhes como marca, modelo, ano e especificações técnicas. Isso permite uma organização precisa dos veículos participantes do evento.</p>
+        <p>O sistema registra e exibe os melhores tempos obtidos pelos veículos durante o evento, permitindo a competição saudável e o reconhecimento dos melhores desempenhos.</p>
+        <p>Os interessados podem adquirir passaportes para o evento de forma conveniente por meio da plataforma.</p>
+        <p>O sistema fornece aos participantes e visitantes acesso a informações detalhadas sobre o evento, incluindo datas, horários, localização, programação, regulamentos e regras específicas do evento. Isso garante que todos estejam bem informados.</p>
+        
+        <h4>Responsabilidades:</h4>
+        <p>No âmbito deste projeto, minhas responsabilidades incluíram o design e desenvolvimento da interface do usuário, bem como a implementação de funcionalidades-chave, como os filtros de classificação e a gestão do carrinho de compras. Essas adições contribuíram significativamente para melhorar a experiência dos usuários que desejavam comprar ingressos para o VDABLIO Racing de forma rápida e eficiente.</p>
+      </div>
+      `,
+    skills: [
+      {
+        id: 1,
+        name: 'Next.js',
+      },
+      {
+        id: 2,
+        name: 'Typescript',
+      },
+      {
+        id: 3,
+        name: 'Formik',
+      },
+      {
+        id: 4,
+        name: 'Yup',
+      },
+      {
+        id: 5,
+        name: 'Swiper',
       },
     ],
   },
