@@ -1,5 +1,4 @@
 import React from 'react';
-import Profile from '@/assets/images/profile2c.png';
 import Image from 'next/image';
 
 export function Avatar() {
@@ -12,7 +11,7 @@ export function Avatar() {
         "
     >
       <Image
-        src={Profile}
+        src="/me.png"
         alt="Bruno Rodrigues"
         width={500}
         height={500}

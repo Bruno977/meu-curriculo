@@ -97,6 +97,8 @@ export function ModalProject({
                         <div onClick={() => setToggler(!toggler)}>
                           <Image
                             src={project.thumb}
+                            width={1920}
+                            height={1080}
                             alt={project.name}
                             className="rounded-lg max-w-full"
                           />
@@ -121,7 +123,7 @@ export function ModalProject({
       {project && project.images.length > 0 && (
         <FsLightbox
           toggler={toggler}
-          sources={project.images.map((image) => image.src)}
+          sources={project.images.map((image) => image)}
         />
       )}
     </>

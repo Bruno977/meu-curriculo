@@ -2,8 +2,8 @@ import { StaticImageData } from 'next/image';
 export type ProjectType = {
   id: number;
   name: string;
-  thumb: StaticImageData | null;
-  images: StaticImageData[];
+  thumb: string;
+  images: string[];
   description?: string;
   skills: {
     id: number;
