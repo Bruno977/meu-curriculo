@@ -1,4 +1,5 @@
 import { imagesCheckPay } from './checkpay';
+import { imagesIcakbar } from './icakbar';
 import { imagesZnt } from './znt/images';
 export const ProjectsReact = [
   {
@@ -99,6 +100,71 @@ export const ProjectsReact = [
       {
         id: 2,
         name: 'Typescript',
+      },
+      {
+        id: 3,
+        name: 'radix-ui',
+      },
+      {
+        id: 4,
+        name: 'formik',
+      },
+      {
+        id: 5,
+        name: 'yup',
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: 'Icakbar',
+    thumb: imagesIcakbar.thumb,
+    images: imagesIcakbar.images,
+    description: `
+      <div class="description-project">
+        <h2>Desenvolvimento de um sistema de cursos.</h2>
+        <h4>Visão Geral do Projeto:</h4>
+        <p>O projeto consistiu no desenvolvimento de uma plataforma educacional online dedicada a proporcionar uma experiência de aprendizado envolvente e altamente eficaz para os alunos. Esta plataforma foi projetada para abrigar uma ampla variedade de cursos em diversos tópicos, oferecendo uma abordagem flexível e inovadora para o ensino e aprendizado.</p>
+        <h4>Tecnologias Utilizadas:</h4>
+        <p>Para a construção deste sistema, foi utilizado um conjunto de tecnologias modernas que incluem Next.js, TypeScript, Tailwind CSS, Headless UI, Vimeo para conteúdo de vídeo, Formik e Yup para gerenciamento de formulários, bem como o Swiper para aprimorar a experiência de navegação dos usuários.
+        </p>
+        <h4>Desafios Enfrentados:</h4>
+        <p>Um dos principais desafios encontrados durante o desenvolvimento do sistema foi o gerenciamento eficiente das aulas. Era necessário criar uma maneira intuitiva para os alunos acompanharem o progresso das aulas, possibilitando pausar e retomar o conteúdo, enquanto garantiamos que o progresso fosse registrado de forma precisa.
+        </p>
+        <h4>Soluções Implementadas:</h4>
+        <p>Para superar o desafio do gerenciamento de aulas, foi implementado um contexto que simplificou a verificação do status de cada aula. As aulas eram liberas para conclusão quando restavam apenas 30 segundos para o término. Além disso, a interação dos usuários, como o início e pausa das aulas, acionava requisições ao backend para armazenar o tempo atual da aula. O uso do contexto facilitou o monitoramento eficaz do estado atual de cada aula.
+        </p>
+        <h4>Recursos e Funcionalidades Principais:</h4>
+        <p>Geração automática de certificados para os alunos após a conclusão bem-sucedida de um curso.</p>
+        <p>Controle flexível do progresso das aulas, permitindo que os alunos iniciem, pausam e retomem o conteúdo com interações em tempo real, que são sincronizadas com o backend.
+        </p>
+        <p>Gerenciamento de aulas disponíveis ou indisponíveis para os alunos, garantindo que o acesso ao conteúdo seja controlado com base nas configurações do curso.
+        </p>
+        
+        <h4>Responsabilidades:</h4>
+        <p>No decorrer deste projeto, desempenhei um papel central como responsável pelo desenvolvimento frontend. Isso incluiu a implementação de todas as funcionalidades-chave do sistema, contribuindo para uma experiência de usuário fluida e altamente interativa.</p>
+      </div>
+      `,
+    skills: [
+      {
+        id: 1,
+        name: 'Next.js',
+      },
+      {
+        id: 2,
+        name: 'Typescript',
+      },
+      {
+        id: 3,
+        name: 'radix-ui',
+      },
+      {
+        id: 4,
+        name: 'formik',
+      },
+      {
+        id: 5,
+        name: 'yup',
       },
     ],
   },

@@ -1,13 +1,15 @@
+const url = process.env.NEXT_PUBLIC_PATH_IMAGE;
+
 export const imagesZnt = {
-  thumb: '/portfolio/znt/znt-1.png',
+  thumb: `${url}/portfolio/znt/znt-1.png`,
   images: [
-    '/portfolio/znt/znt-digital.png',
-    '/portfolio/znt/znt-1.png',
-    '/portfolio/znt/znt-2.png',
-    '/portfolio/znt/znt-3.png',
-    '/portfolio/znt/znt-4.png',
-    '/portfolio/znt/znt-5.png',
-    '/portfolio/znt/znt-6.png',
-    '/portfolio/znt/znt-7.png',
+    `${url}/portfolio/znt/znt-digital.png`,
+    `${url}/portfolio/znt/znt-1.png`,
+    `${url}/portfolio/znt/znt-2.png`,
+    `${url}/portfolio/znt/znt-3.png`,
+    `${url}/portfolio/znt/znt-4.png`,
+    `${url}/portfolio/znt/znt-5.png`,
+    `${url}/portfolio/znt/znt-6.png`,
+    `${url}/portfolio/znt/znt-7.png`,
   ],
 };
