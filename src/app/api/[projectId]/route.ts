@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { ProjectsReact } from '@/app/data/projects';
+import { ProjectsReact } from '@/data/projects';
 
 interface ContextProps {
   params: {

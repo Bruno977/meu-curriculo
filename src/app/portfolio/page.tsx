@@ -3,7 +3,7 @@ import { ProjectItem } from '@/components/ProjectItem';
 import { Subtitle } from '@/components/Subtitle';
 import { Title } from '@/components/Title';
 import React, { useState } from 'react';
-import { ProjectsReact } from '../data/projects';
+import { ProjectsReact } from '@/data/projects';
 import { ModalProject } from '@/components/ModalProject';
 
 function Portfolio() {

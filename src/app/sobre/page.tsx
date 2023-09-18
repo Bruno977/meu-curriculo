@@ -3,11 +3,11 @@ import { DownloadCv } from '@/components/DownloadCv';
 import { Subtitle } from '@/components/Subtitle';
 import { Timeline } from '@/components/Timeline';
 import { Title } from '@/components/Title';
-import { TimeLineData } from '../data/timeline';
-import { EducationData } from '../data/education';
-import { CoursesDate } from '../data/courses';
+import { TimeLineData } from '@/data/timeline';
+import { EducationData } from '@/data/education';
+import { CoursesDate } from '@/data/courses';
 import { ProgressSkills } from '@/components/ProgressSkills';
-import { SkillsData } from '../data/skills';
+import { SkillsData } from '@/data/skills';
 
 function About() {
   return (
