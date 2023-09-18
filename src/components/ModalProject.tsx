@@ -90,7 +90,7 @@ export function ModalProject({
                       {project.thumb && (
                         <div onClick={() => setToggler(!toggler)}>
                           <Image
-                            src={project.thumb}
+                            src={`${process.env.NEXT_PUBLIC_PATH_IMAGE}${project.thumb}`}
                             width={1920}
                             height={1080}
                             alt={project.name}

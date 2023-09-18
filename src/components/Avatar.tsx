@@ -11,7 +11,7 @@ export function Avatar() {
         "
     >
       <Image
-        src="/me.png"
+        src={`${process.env.NEXT_PUBLIC_PATH_IMAGE}/me.png`}
         alt="Bruno Rodrigues"
         width={500}
         height={500}

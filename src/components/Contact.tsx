@@ -20,8 +20,8 @@ export function Contact() {
     };
     emailjs
       .send(
-        'service_tuzn9wz',
-        'template_ebhvb9n',
+        process.env.NEXT_PUBLIC_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID!,
         values,
         process.env.NEXT_PUBLIC_KEY
       )
