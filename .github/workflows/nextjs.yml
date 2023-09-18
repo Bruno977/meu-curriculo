@@ -23,7 +23,11 @@ permissions:
 concurrency:
   group: 'pages'
   cancel-in-progress: false
-
+env:
+  NEXT_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_KEY }}
+  NEXT_PUBLIC_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }}
+  NEXT_PUBLIC_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_SERVICE_ID }}
+  NEXT_PUBLIC_PATH_IMAGE: ${{ secrets.NEXT_PUBLIC_PATH_IMAGE }}
 jobs:
   # Build job
   build:
@@ -48,11 +52,6 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
-        env:
-          NEXT_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_KEY }}
-          NEXT_PUBLIC_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_TEMPLATE_ID }}
-          NEXT_PUBLIC_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_SERVICE_ID }}
-          NEXT_PUBLIC_PATH_IMAGE: ${{ secrets.NEXT_PUBLIC_PATH_IMAGE }}
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
