@@ -241,7 +241,7 @@ export const ProjectsReact = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: 'Design Cursos',
     thumb: imagesDesignCursos.thumb,
     images: imagesDesignCursos.images,
