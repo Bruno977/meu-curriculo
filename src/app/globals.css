@@ -19,3 +19,16 @@
 .description-project p + p {
   padding-top: 0.625rem;
 }
+.description-project a {
+  text-decoration: underline;
+  color: rgb(16 185 129);
+  font-size: 0.875rem;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.description-project svg {
+  fill: rgb(16 185 129);
+}

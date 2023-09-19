@@ -1,4 +1,5 @@
 import { imagesCheckPay } from './checkpay';
+import { imagesDesignCursos } from './designCursos';
 import { imagesIcakbar } from './icakbar';
 import { imagesVdablio } from './vdablio';
 import { imagesZnt } from './znt/images';
@@ -186,6 +187,10 @@ export const ProjectsReact = [
     images: imagesVdablio.images,
     description: `
       <div class="description-project">
+        <a href="https://www.vdablioracing.com.br" target="_blank">
+          Visitar Site
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+        </a>
 
         <h2>Sistema de Vendas de Ingressos para o VDABLIO Racing.</h2>
 
@@ -232,6 +237,55 @@ export const ProjectsReact = [
       {
         id: 5,
         name: 'Swiper',
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: 'Design Cursos',
+    thumb: imagesDesignCursos.thumb,
+    images: imagesDesignCursos.images,
+    description: `
+      <div class="description-project"> 
+        <h2>Projeto Para divulgação e vendas de cursos.</h2>
+
+        <h4>Visão Geral do Projeto:</h4>
+        <p>O projeto Design Cursos Profissionalizantes é uma plataforma educacional completa e dedicada a fornecer formação profissional de qualidade em uma variedade de campos.</p>
+
+        <h4>Tecnologias Utilizadas:</h4>
+        <p>O website foi construído utilizando tecnologias de ponta, incluindo Next.js, Javascript, Swiper e Yup, garantindo uma experiência de usuário moderna e eficiente.</p>
+
+        <h4>Desafios Enfrentados:</h4>
+        <p>Um dos principais desafios enfrentados durante o desenvolvimento do projeto foi a implementação de um sistema de filtragem de cursos eficaz.</p>
+        
+        <h4>Soluções Implementadas:</h4>
+        <p>Para superar o desafio de filtragem de cursos, Foi implementado uma abordagem dinâmica que monitora a URL do website. Sempre que um visitante aplica filtros específicos, uma nova requisição é enviada ao backend, resultando no preenchimento dos cursos correspondentes aos filtros selecionados. Isso garante que os visitantes possam explorar e encontrar cursos que atendam às suas necessidades de maneira eficiente.</p>
+        
+        <h4>Recursos e Funcionalidades Principais:</h4>
+        <p>Navegação Intuitiva: Os visitantes podem navegar facilmente entre os cursos disponíveis usando o sistema de filtragem dinâmico.</p>
+        <p>Informações Detalhadas: Cada curso possui uma página dedicada com informações detalhadas, permitindo que os visitantes obtenham uma visão completa do conteúdo e dos benefícios do curso.</p>
+        <p>Os visitantes têm a flexibilidade de personalizar sua busca, aplicando filtros específicos para encontrar cursos que correspondam às suas preferências.</p>
+        
+        <h4>Responsabilidades:</h4>
+        <p>Responsável pelo front-end e pelas funcionalidades do projeto.</p>
+      </div>
+      `,
+    skills: [
+      {
+        id: 1,
+        name: 'Next.js',
+      },
+      {
+        id: 2,
+        name: 'Javascript',
+      },
+      {
+        id: 3,
+        name: 'Swiper',
+      },
+      {
+        id: 4,
+        name: 'Yup',
       },
     ],
   },
