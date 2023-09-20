@@ -1,6 +1,7 @@
 import { imagesCheckPay } from './checkpay';
 import { imagesDesignCursos } from './designCursos';
 import { imagesIcakbar } from './icakbar';
+import { imagesMarketPlaceBinden } from './marketplaceBinden';
 import { imagesVdablio } from './vdablio';
 import { imagesZnt } from './znt/images';
 export const ProjectsReact = [
@@ -286,6 +287,59 @@ export const ProjectsReact = [
       {
         id: 4,
         name: 'Yup',
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: 'MarketPlace Binden',
+    thumb: imagesMarketPlaceBinden.thumb,
+    images: imagesMarketPlaceBinden.images,
+    description: `
+      <div class="description-project"> 
+        <h2>Projeto de E-commerce na Plataforma Flexy.</h2>
+
+        <h4>Visão Geral do Projeto:</h4>
+        <p>Este projeto de e-commerce foi concebido e desenvolvido na plataforma Flexy, com o objetivo de criar uma experiência de compra online excepcional para os clientes. </p>
+
+        <h4>Tecnologias Utilizadas:</h4>
+        <p>Utilizei uma variedade de tecnologias, incluindo JavaScript, jQuery, HTML, CSS e Twig para garantir que o site seja moderno, responsivo e funcional.</p>
+
+        <h4>Desafios Enfrentados:</h4>
+        <p>Um dos principais desafios que enfrentei durante o desenvolvimento deste projeto foi a falta de documentação completa sobre todas as funcionalidades da plataforma Flexy.</p>
+        
+        <h4>Soluções Implementadas:</h4>
+        <p>Para superar o desafio da documentação, exigiu que eu fosse especialmente criativo e adaptável ao implementar as funcionalidades necessárias para o sucesso do e-commerce.</p>
+        
+        <h4>Recursos e Funcionalidades Principais:</h4>
+        <p>Os clientes podem escolher facilmente os produtos que desejam comprar, explorando os catálogo diversificado.</p>
+        <p>informações detalhadas sobre a loja, incluindo história, missão, visão e valores, para que os clientes possam conhecer melhor a marca.</p>
+        <p>Processo de compra intuitivo e eficiente, permitindo que os clientes adicionem produtos ao carrinho, revisem seus pedidos e efetuem o pagamento com facilidade e segurança.</p>
+        
+        <h4>Responsabilidades:</h4>
+        <p>Responsável por todo o desenvolvimento do layout do projeto e pela parte de front-end.</p>
+      </div>
+      `,
+    skills: [
+      {
+        id: 1,
+        name: 'flexy',
+      },
+      {
+        id: 2,
+        name: 'Javascript',
+      },
+      {
+        id: 3,
+        name: 'twig',
+      },
+      {
+        id: 4,
+        name: 'html',
+      },
+      {
+        id: 5,
+        name: 'css',
       },
     ],
   },
