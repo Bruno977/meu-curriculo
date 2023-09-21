@@ -13,10 +13,6 @@ interface ModalProjectProps {
   projectId: number | null;
 }
 
-interface imageProps {
-  images: string[];
-}
-
 export function ModalProject({
   isOpen,
   setIsOpen,
@@ -124,14 +120,11 @@ export function ModalProject({
         </Dialog>
       </Transition>
       {project && project.images.length > 0 && (
-        <>
-          <FsLightbox
-            toggler={toggler}
-            key={project.images.length}
-            sources={project.images.map((image) => image)}
-          />
-          <div>size: {project.images.length}</div>
-        </>
+        <FsLightbox
+          toggler={toggler}
+          key={project.images.length}
+          sources={project.images.map((image) => image)}
+        />
       )}
     </>
   );
