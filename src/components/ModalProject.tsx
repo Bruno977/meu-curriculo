@@ -33,6 +33,7 @@ export function ModalProject({
 
   function handleCloseModal() {
     setIsOpen(false);
+    setProject(null);
   }
 
   useEffect(() => {
