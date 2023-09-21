@@ -13,6 +13,10 @@ interface ModalProjectProps {
   projectId: number | null;
 }
 
+interface imageProps {
+  images: string[];
+}
+
 export function ModalProject({
   isOpen,
   setIsOpen,
@@ -29,6 +33,10 @@ export function ModalProject({
     if (response) {
       setProject(response);
     }
+  }
+
+  function handleOpenImages() {
+    setToggler(!toggler);
   }
 
   function handleCloseModal() {
@@ -89,13 +97,13 @@ export function ModalProject({
                         </button>
                       </div>
                       {project.thumb && (
-                        <div onClick={() => setToggler(!toggler)}>
+                        <div onClick={handleOpenImages}>
                           <Image
                             src={project.thumb}
                             width={1920}
                             height={1080}
                             alt={project.name}
-                            className="rounded-lg max-w-full"
+                            className="rounded-lg max-w-full cursor-pointer"
                           />
                         </div>
                       )}
@@ -116,10 +124,14 @@ export function ModalProject({
         </Dialog>
       </Transition>
       {project && project.images.length > 0 && (
-        <FsLightbox
-          toggler={toggler}
-          sources={project.images.map((image) => image)}
-        />
+        <>
+          <FsLightbox
+            toggler={toggler}
+            key={project.images.length}
+            sources={project.images.map((image) => image)}
+          />
+          <div>size: {project.images.length}</div>
+        </>
       )}
     </>
   );
