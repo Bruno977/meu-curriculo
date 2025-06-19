@@ -277,9 +277,19 @@ export default function Component() {
                   <h3 className="text-2xl font-bold mb-2">
                     Desenvolvedor Front-end
                   </h3>
-                  <p className="text-purple-400 font-semibold text-lg mb-2">
-                    Koden Digital
-                  </p>
+                  <div className="flex items-center gap-2">
+                    <p className="text-purple-400 font-semibold text-lg">
+                      Koden Digital
+                    </p>
+                    <a
+                      href="https://koden.digital/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-purple-400 hover:text-purple-300 transition-colors"
+                    >
+                      <Globe className="w-4 h-4" />
+                    </a>
+                  </div>
                   <p className="text-gray-400 text-sm mb-4">
                     Setembro 2021 - Fevereiro 2024
                   </p>
@@ -443,12 +453,15 @@ export default function Component() {
                   </div>
                   <span>(22) 99798-3656</span>
                 </div>
-                <div className="flex items-center gap-4 text-gray-300">
+                <a
+                  href="mailto:brunorodrigues.silveira@gmail.com"
+                  className="flex items-center gap-4 text-gray-300 underline"
+                >
                   <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
                     <Mail className="w-5 h-5 text-blue-400" />
                   </div>
                   <span>brunorodrigues.silveira@gmail.com</span>
-                </div>
+                </a>
                 <div className="flex items-center gap-4 text-gray-300">
                   <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
                     <MapPin className="w-5 h-5 text-blue-400" />
@@ -464,7 +477,6 @@ export default function Component() {
               </h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-white mb-2">Idiomas</h4>
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-gray-300">Inglês</span>
                     <span className="text-sm bg-orange-100 text-orange-800 px-2 py-1 rounded-full">
@@ -485,12 +497,18 @@ export default function Component() {
       <footer className="container mx-auto px-6 py-12 border-t border-gray-800">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-6 mb-4 md:mb-0">
-            <Linkedin className="w-6 h-6 text-gray-400 hover:text-blue-400 transition-colors cursor-pointer" />
-            <Github className="w-6 h-6 text-gray-400 hover:text-white transition-colors cursor-pointer" />
-            <Globe className="w-6 h-6 text-gray-400 hover:text-blue-400 transition-colors cursor-pointer" />
+            <a
+              href="https://www.linkedin.com/in/bruno-rodrigues-78416319b/"
+              target="_blank"
+            >
+              <Linkedin className="w-6 h-6 text-gray-400 hover:text-blue-400 transition-colors cursor-pointer" />
+            </a>
+            <a href="https://github.com/Bruno977" target="_blank">
+              <Github className="w-6 h-6 text-gray-400 hover:text-white transition-colors cursor-pointer" />
+            </a>
           </div>
           <p className="text-gray-400 text-sm">
-            Copyright ©2024 All rights reserved
+            Copyright ©{new Date().getFullYear()} Todos os direitos reservados.
           </p>
         </div>
       </footer>
