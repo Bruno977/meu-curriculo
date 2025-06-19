@@ -100,7 +100,7 @@ export default function Component() {
               me tornar um desenvolvedor full stack mais completo.
             </p>
             <a
-              href="/meu-curriculo.pdf"
+              href="./meu-curriculo.pdf"
               download
               className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center gap-2"
             >
@@ -113,7 +113,7 @@ export default function Component() {
             <div className="w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-purple-600 p-1">
               <div className="w-full h-full rounded-full overflow-hidden bg-gray-800 flex items-center justify-center">
                 <Image
-                  src="/profile.jpg"
+                  src="./profile.jpg"
                   alt="Bruno Rodrigues"
                   width={400}
                   height={400}
